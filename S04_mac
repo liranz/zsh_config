@@ -22,9 +22,9 @@ if [[ $(uname) == "Darwin" ]]; then
         fi
     }
 
-    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH
     export MANPATH=$MANPATH:/usr/local/share/man
-
+    export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
     # python that comes from brew
     #export PATH=/usr/local/share/python:$PATH
 
