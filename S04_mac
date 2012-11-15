@@ -31,4 +31,6 @@ if [[ $(uname) == "Darwin" ]]; then
     export LSCOLORS=GxFxCxDxBxegedabagaced
     alias top='top -o cpu'
     alias ls='ls -G'
+
+    [ -d /Applications/Xee.app ] && alias xee='open -Wa /Applications/Xee.app '
 fi
