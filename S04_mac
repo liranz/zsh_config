@@ -22,9 +22,9 @@ if [[ $(uname) == "Darwin" ]]; then
         fi
     }
 
-    export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH=/Applications/Emacs.app/Contents/MacOS/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH
     export MANPATH=$MANPATH:/usr/local/share/man
-    export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+    #export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
     # python that comes from brew
     #export PATH=/usr/local/share/python:$PATH
 
@@ -52,4 +52,10 @@ if [[ $(uname) == "Darwin" ]]; then
     function audio-play() {
       # should add something here too
     }
+
+    # This gets pyenv to work well, and lets me use python 3.4.3 on El Capitan
+    #if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+	#export WEKA_DOCKER_BETA=1
+
 fi
